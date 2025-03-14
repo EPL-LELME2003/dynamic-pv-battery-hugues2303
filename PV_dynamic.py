@@ -31,7 +31,7 @@ model = ConcreteModel()
 
 
 # Specify the path towards your solver (gurobi) file
-solver = SolverFactory('...')
+solver = SolverFactory(gurobi)
 solver.solve(model)
 
 # Results - Print the optimal PV size and optimal battery capacity
